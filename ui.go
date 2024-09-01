@@ -31,7 +31,7 @@ func createActionList() *tview.List {
 			RunDiscCleanup()
 		}).
 		AddItem("Power Plan", "Applies the Ultimate Powerplan to gain more performance", '2', func() {
-			// TODO: Implement Power Plan functionality
+			UltimatePowerPlan()
 		}).
 		AddItem("Update All Programs", "Updates all programs on your computer (a reboot may be required)", '3', func() {
 			RunUpdateAllPrograms()
