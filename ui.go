@@ -36,6 +36,9 @@ func createActionList() *tview.List {
 		AddItem("Update All Programs", "Updates all programs on your computer (a reboot may be required)", '3', func() {
 			RunUpdateAllPrograms()
 		}).
+		AddItem("God Mode", "Access all system settings in one place", '4', func() {
+			OpenGodMode()
+		}).
 		AddItem("Quit", "Press to exit", 'q', func() {
 			app.Stop()
 		})

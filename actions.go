@@ -61,6 +61,12 @@ func RunUpdateAllPrograms() {
 	reset()
 }
 
+func OpenGodMode() {
+	godModePath := "shell:::{ED7BA470-8E54-465E-825C-99712043E01C}"
+
+	runCommand("explorer", godModePath)
+}
+
 func IsWingetInstalled() bool {
 	output, err := runCommand("winget", "--version")
 	if err != nil {
